@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
     getSupportActionBar().setCustomView(v);
+    getSupportActionBar().setElevation(0f);
     // Create the adapter that will return a fragment for each of the three
     // primary sections of the activity.
     mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
@@ -53,9 +54,9 @@ public class MainActivity extends AppCompatActivity {
 
   public class SectionsPagerAdapter extends FragmentPagerAdapter implements IconTabProvider {
 
-    private int[] tab_icons = {R.drawable.ic_tab1,
-        R.drawable.ic_tab2,
-        R.drawable.ic_tab3,
+    private int[] tab_icons = {R.drawable.ic_action_home,
+        R.drawable.ic_action_call,
+        R.drawable.ic_action_message,
     };
 
 
